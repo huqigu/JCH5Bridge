@@ -1,0 +1,6 @@
+framework module JCH5Bridge {
+  umbrella header "JCH5Bridge-umbrella.h"
+
+  export *
+  module * { export * }
+}

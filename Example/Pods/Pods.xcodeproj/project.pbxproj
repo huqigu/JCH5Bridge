@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0695392D63698102DB019C4E9A6BDC47 /* JCH5Bridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AA439C32D7DE59E28574F999128291C /* JCH5Bridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C529AA2A25E881B4B9E2CA7519C36BB /* JCH5BridgeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B9C781C1B98FEA9A5D025F28BF6D9D /* JCH5BridgeHandler.m */; };
+		14B8B528A7E1A3C4E7401AB92D12CAB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		17E18D7382A3A00F85E3914685007016 /* JCH5BridgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D0C481F47A65E48E1C619AAC7E3579 /* JCH5BridgeModel.m */; };
+		257AA7C1E5F2CACBB97F2981F524781B /* JCH5BridgeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4DFF948C19E3E65588D5044B7867ED /* JCH5BridgeHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BC3623698AF1B08E86297822018CC98 /* JCH5Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B322DE95EEFF9D8A8B4086A33B303E41 /* JCH5Bridge.m */; };
+		3EA62B6F38BABCBE4A11D5C3D238F0BE /* Pods-JCH5Bridge_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06E4FD53D162CDDFE9B9DF68F86E7098 /* Pods-JCH5Bridge_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D682E827D91CF136BA970212EF5F946 /* JCH5Bridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0FB507EBCCC6E3EAA90B851596FF5B2 /* JCH5Bridge-dummy.m */; };
+		7A8F041E47C99DB0A0FFF5CC5A32DD55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		80E9B16BC863E41BDF7BF45AF315DBBB /* Pods-JCH5Bridge_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCEE432480A5C2AB4D128D25971851 /* Pods-JCH5Bridge_Tests-dummy.m */; };
+		90B80C3AD69321AC7C8AB19AFDA1BFF9 /* JCH5BridgeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7454AC1FD51306CB5EAC770F4F405417 /* JCH5BridgeModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A11FBB8DD43E4290BF0126109F98428F /* Pods-JCH5Bridge_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E77CBF6A2EF4CD1977BED512FA00DA /* Pods-JCH5Bridge_Example-dummy.m */; };
+		A203DD4D4AD11DD66B57C22567F06E7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		D75655F1F0DD4DFB71C72480A5F92F3C /* Pods-JCH5Bridge_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 161C057A8E3F2190AC2ECD2DE7F2A155 /* Pods-JCH5Bridge_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F117D84A85E0705BB8181DAF6E9AEA47 /* JCH5Bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D9D4914F3A2204EF340E766FB02A82 /* JCH5Bridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		619E2273E92D077AE3F1151DABA52CB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5EDCFD8651CDE9CEE7C8519FBAC813E;
+			remoteInfo = "Pods-JCH5Bridge_Example";
+		};
+		D41B17FF5FEFA435F0F6F3E87252ED3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8473A9C7451383221568867B94D06F69;
+			remoteInfo = JCH5Bridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06B9C781C1B98FEA9A5D025F28BF6D9D /* JCH5BridgeHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JCH5BridgeHandler.m; path = JCH5Bridge/Classes/JCH5BridgeHandler.m; sourceTree = "<group>"; };
+		06E4FD53D162CDDFE9B9DF68F86E7098 /* Pods-JCH5Bridge_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCH5Bridge_Tests-umbrella.h"; sourceTree = "<group>"; };
+		09FDADC9B19A0335A34851CD0A34A2B9 /* JCH5Bridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JCH5Bridge.modulemap; sourceTree = "<group>"; };
+		0A20855BA6A188ECD76927743D5C2522 /* Pods-JCH5Bridge_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCH5Bridge_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0C78A73AA0206E88ABFA4243AC020F02 /* JCH5Bridge.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = JCH5Bridge.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		161C057A8E3F2190AC2ECD2DE7F2A155 /* Pods-JCH5Bridge_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCH5Bridge_Example-umbrella.h"; sourceTree = "<group>"; };
+		20D0C481F47A65E48E1C619AAC7E3579 /* JCH5BridgeModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JCH5BridgeModel.m; path = JCH5Bridge/Classes/JCH5BridgeModel.m; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24B18AEC817351730F69184987B013B0 /* Pods-JCH5Bridge_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCH5Bridge_Example-resources.sh"; sourceTree = "<group>"; };
+		25E88C63E9E75D0C507529BB9D95026A /* Pods_JCH5Bridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JCH5Bridge_Tests.framework; path = "Pods-JCH5Bridge_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E77CBF6A2EF4CD1977BED512FA00DA /* Pods-JCH5Bridge_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCH5Bridge_Example-dummy.m"; sourceTree = "<group>"; };
+		2AA439C32D7DE59E28574F999128291C /* JCH5Bridge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCH5Bridge-umbrella.h"; sourceTree = "<group>"; };
+		372E66385549B07B9382E13E9DC5F8AD /* Pods-JCH5Bridge_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCH5Bridge_Example-frameworks.sh"; sourceTree = "<group>"; };
+		481E7414B8DADA009318B6F8874DBBD7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49B756EC65EB4EAD2BF9B0EFFD7CD7E6 /* JCH5Bridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JCH5Bridge.framework; path = JCH5Bridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4DFF948C19E3E65588D5044B7867ED /* JCH5BridgeHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JCH5BridgeHandler.h; path = JCH5Bridge/Classes/JCH5BridgeHandler.h; sourceTree = "<group>"; };
+		5CDCEE432480A5C2AB4D128D25971851 /* Pods-JCH5Bridge_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCH5Bridge_Tests-dummy.m"; sourceTree = "<group>"; };
+		66E369E92A1456914B99209774748C19 /* Pods-JCH5Bridge_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCH5Bridge_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		70D9D4914F3A2204EF340E766FB02A82 /* JCH5Bridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JCH5Bridge.h; path = JCH5Bridge/Classes/JCH5Bridge.h; sourceTree = "<group>"; };
+		7454AC1FD51306CB5EAC770F4F405417 /* JCH5BridgeModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JCH5BridgeModel.h; path = JCH5Bridge/Classes/JCH5BridgeModel.h; sourceTree = "<group>"; };
+		7614E50C06578D347A5C90FD729D2B42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79FFBBBC0BF3E0475ADEA44C072C3FAD /* JCH5Bridge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCH5Bridge.xcconfig; sourceTree = "<group>"; };
+		819E99E1D8C7AFB55C68141DEFDD4A5C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A6560255ED436A286989B95A30FFD92 /* Pods-JCH5Bridge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCH5Bridge_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A1BAA53A608663B1F7279C8803F3CEC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		AAFDE18D7880601992A3900A84C63601 /* Pods-JCH5Bridge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCH5Bridge_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AB3A9A83E8366D58C2F62751EB5FCDBE /* Pods-JCH5Bridge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCH5Bridge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B322DE95EEFF9D8A8B4086A33B303E41 /* JCH5Bridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JCH5Bridge.m; path = JCH5Bridge/Classes/JCH5Bridge.m; sourceTree = "<group>"; };
+		B87B650FB25D7B72C926B5584858F366 /* JCH5Bridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCH5Bridge-prefix.pch"; sourceTree = "<group>"; };
+		C2AEF05A834352DB5857DABAC3741747 /* Pods-JCH5Bridge_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JCH5Bridge_Example.modulemap"; sourceTree = "<group>"; };
+		C72E1B8D55EB75BF128BEF717359C629 /* Pods-JCH5Bridge_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCH5Bridge_Tests-resources.sh"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CD7D5A3ACB2DEE53C13B972B75767825 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D7C80AFA8606F8D231C2A0B9D7E9A965 /* Pods-JCH5Bridge_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCH5Bridge_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E206ACD5E0EBBAABFA4661EADE975EC8 /* Pods-JCH5Bridge_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCH5Bridge_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EBE068AB647AC9BFD0088E3292F42F00 /* Pods-JCH5Bridge_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCH5Bridge_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC20E2FCA78B28B8427A3303857FB2C7 /* Pods-JCH5Bridge_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JCH5Bridge_Tests.modulemap"; sourceTree = "<group>"; };
+		F0FB507EBCCC6E3EAA90B851596FF5B2 /* JCH5Bridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JCH5Bridge-dummy.m"; sourceTree = "<group>"; };
+		F3660EBF9534EC6A85B39F9AB1741B38 /* Pods-JCH5Bridge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCH5Bridge_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F642F670D10CB9700E3AFD896FC884E9 /* Pods_JCH5Bridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JCH5Bridge_Example.framework; path = "Pods-JCH5Bridge_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09B0300D0B38089651B51AD03BC839A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A8F041E47C99DB0A0FFF5CC5A32DD55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9693A2518AB540F71F7E25EBFED65908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A203DD4D4AD11DD66B57C22567F06E7D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6419B3F1A37A357E657E60BCD0B00EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B8B528A7E1A3C4E7401AB92D12CAB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C9F90A0172DD7DDA1C3FF81DC0B3AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7614E50C06578D347A5C90FD729D2B42 /* Info.plist */,
+				09FDADC9B19A0335A34851CD0A34A2B9 /* JCH5Bridge.modulemap */,
+				79FFBBBC0BF3E0475ADEA44C072C3FAD /* JCH5Bridge.xcconfig */,
+				F0FB507EBCCC6E3EAA90B851596FF5B2 /* JCH5Bridge-dummy.m */,
+				B87B650FB25D7B72C926B5584858F366 /* JCH5Bridge-prefix.pch */,
+				2AA439C32D7DE59E28574F999128291C /* JCH5Bridge-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JCH5Bridge";
+			sourceTree = "<group>";
+		};
+		29D5F4845123DB8B8EC86D728F3D7448 /* Pods-JCH5Bridge_Example */ = {
+			isa = PBXGroup;
+			children = (
+				819E99E1D8C7AFB55C68141DEFDD4A5C /* Info.plist */,
+				C2AEF05A834352DB5857DABAC3741747 /* Pods-JCH5Bridge_Example.modulemap */,
+				0A20855BA6A188ECD76927743D5C2522 /* Pods-JCH5Bridge_Example-acknowledgements.markdown */,
+				EBE068AB647AC9BFD0088E3292F42F00 /* Pods-JCH5Bridge_Example-acknowledgements.plist */,
+				28E77CBF6A2EF4CD1977BED512FA00DA /* Pods-JCH5Bridge_Example-dummy.m */,
+				372E66385549B07B9382E13E9DC5F8AD /* Pods-JCH5Bridge_Example-frameworks.sh */,
+				24B18AEC817351730F69184987B013B0 /* Pods-JCH5Bridge_Example-resources.sh */,
+				161C057A8E3F2190AC2ECD2DE7F2A155 /* Pods-JCH5Bridge_Example-umbrella.h */,
+				8A6560255ED436A286989B95A30FFD92 /* Pods-JCH5Bridge_Example.debug.xcconfig */,
+				F3660EBF9534EC6A85B39F9AB1741B38 /* Pods-JCH5Bridge_Example.release.xcconfig */,
+			);
+			name = "Pods-JCH5Bridge_Example";
+			path = "Target Support Files/Pods-JCH5Bridge_Example";
+			sourceTree = "<group>";
+		};
+		39EBE8989BBA132739E2AEDD90489711 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE0B5BE35BC5C86481997802459C5F83 /* JCH5Bridge */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4E33604E7D2F5EB50CB224D0EA067879 /* Pods-JCH5Bridge_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				481E7414B8DADA009318B6F8874DBBD7 /* Info.plist */,
+				EC20E2FCA78B28B8427A3303857FB2C7 /* Pods-JCH5Bridge_Tests.modulemap */,
+				E206ACD5E0EBBAABFA4661EADE975EC8 /* Pods-JCH5Bridge_Tests-acknowledgements.markdown */,
+				D7C80AFA8606F8D231C2A0B9D7E9A965 /* Pods-JCH5Bridge_Tests-acknowledgements.plist */,
+				5CDCEE432480A5C2AB4D128D25971851 /* Pods-JCH5Bridge_Tests-dummy.m */,
+				66E369E92A1456914B99209774748C19 /* Pods-JCH5Bridge_Tests-frameworks.sh */,
+				C72E1B8D55EB75BF128BEF717359C629 /* Pods-JCH5Bridge_Tests-resources.sh */,
+				06E4FD53D162CDDFE9B9DF68F86E7098 /* Pods-JCH5Bridge_Tests-umbrella.h */,
+				AB3A9A83E8366D58C2F62751EB5FCDBE /* Pods-JCH5Bridge_Tests.debug.xcconfig */,
+				AAFDE18D7880601992A3900A84C63601 /* Pods-JCH5Bridge_Tests.release.xcconfig */,
+			);
+			name = "Pods-JCH5Bridge_Tests";
+			path = "Target Support Files/Pods-JCH5Bridge_Tests";
+			sourceTree = "<group>";
+		};
+		6738C5B2E35DFB80D11046A1A28A2ACF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				29D5F4845123DB8B8EC86D728F3D7448 /* Pods-JCH5Bridge_Example */,
+				4E33604E7D2F5EB50CB224D0EA067879 /* Pods-JCH5Bridge_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6D01B155EA01311397926BA2BD47BF68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49B756EC65EB4EAD2BF9B0EFFD7CD7E6 /* JCH5Bridge.framework */,
+				F642F670D10CB9700E3AFD896FC884E9 /* Pods_JCH5Bridge_Example.framework */,
+				25E88C63E9E75D0C507529BB9D95026A /* Pods_JCH5Bridge_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D3B69A0F87E09507BE9D10977D0F87E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0C78A73AA0206E88ABFA4243AC020F02 /* JCH5Bridge.podspec */,
+				A1BAA53A608663B1F7279C8803F3CEC6 /* LICENSE */,
+				CD7D5A3ACB2DEE53C13B972B75767825 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AE0B5BE35BC5C86481997802459C5F83 /* JCH5Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				70D9D4914F3A2204EF340E766FB02A82 /* JCH5Bridge.h */,
+				B322DE95EEFF9D8A8B4086A33B303E41 /* JCH5Bridge.m */,
+				4A4DFF948C19E3E65588D5044B7867ED /* JCH5BridgeHandler.h */,
+				06B9C781C1B98FEA9A5D025F28BF6D9D /* JCH5BridgeHandler.m */,
+				7454AC1FD51306CB5EAC770F4F405417 /* JCH5BridgeModel.h */,
+				20D0C481F47A65E48E1C619AAC7E3579 /* JCH5BridgeModel.m */,
+				7D3B69A0F87E09507BE9D10977D0F87E /* Pod */,
+				05C9F90A0172DD7DDA1C3FF81DC0B3AB /* Support Files */,
+			);
+			name = JCH5Bridge;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				39EBE8989BBA132739E2AEDD90489711 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6D01B155EA01311397926BA2BD47BF68 /* Products */,
+				6738C5B2E35DFB80D11046A1A28A2ACF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		07D31ED0C53AB48676EFC89701E6E288 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75655F1F0DD4DFB71C72480A5F92F3C /* Pods-JCH5Bridge_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37DBD67E30C4F7A9E7C7BB08ECFD593A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0695392D63698102DB019C4E9A6BDC47 /* JCH5Bridge-umbrella.h in Headers */,
+				F117D84A85E0705BB8181DAF6E9AEA47 /* JCH5Bridge.h in Headers */,
+				257AA7C1E5F2CACBB97F2981F524781B /* JCH5BridgeHandler.h in Headers */,
+				90B80C3AD69321AC7C8AB19AFDA1BFF9 /* JCH5BridgeModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C63EAFF505E8A8EC3FF8E25515E19B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EA62B6F38BABCBE4A11D5C3D238F0BE /* Pods-JCH5Bridge_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5EF7067C32DAF5D9333CD89B682845EE /* Pods-JCH5Bridge_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF77C236A3F69D98CCC8B9348537B35D /* Build configuration list for PBXNativeTarget "Pods-JCH5Bridge_Tests" */;
+			buildPhases = (
+				9C63EAFF505E8A8EC3FF8E25515E19B6 /* Headers */,
+				88B4E2BECD578F0590B72A16E31CD821 /* Sources */,
+				9693A2518AB540F71F7E25EBFED65908 /* Frameworks */,
+				772552D1E44D4D5BEFBCED06076D4715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF570E13B0FE89DE92C4A80625951E2C /* PBXTargetDependency */,
+			);
+			name = "Pods-JCH5Bridge_Tests";
+			productName = "Pods-JCH5Bridge_Tests";
+			productReference = 25E88C63E9E75D0C507529BB9D95026A /* Pods_JCH5Bridge_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8473A9C7451383221568867B94D06F69 /* JCH5Bridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83905030278353B1834BC278E757C29A /* Build configuration list for PBXNativeTarget "JCH5Bridge" */;
+			buildPhases = (
+				37DBD67E30C4F7A9E7C7BB08ECFD593A /* Headers */,
+				8B4EB4C04D96BEEE76B050EF3CDE917C /* Sources */,
+				B6419B3F1A37A357E657E60BCD0B00EE /* Frameworks */,
+				80C937487AEDD9E16CF4741F77870ADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCH5Bridge;
+			productName = JCH5Bridge;
+			productReference = 49B756EC65EB4EAD2BF9B0EFFD7CD7E6 /* JCH5Bridge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C5EDCFD8651CDE9CEE7C8519FBAC813E /* Pods-JCH5Bridge_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C809ABBFD77E1BE44C6779237ADBF6ED /* Build configuration list for PBXNativeTarget "Pods-JCH5Bridge_Example" */;
+			buildPhases = (
+				07D31ED0C53AB48676EFC89701E6E288 /* Headers */,
+				135A4B2C813E972C1CB72EE8F74A3223 /* Sources */,
+				09B0300D0B38089651B51AD03BC839A8 /* Frameworks */,
+				7C758F1C683B9C9A69AA38677F3CB6D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC1CEF922CF446A6ADC050AAA46B615C /* PBXTargetDependency */,
+			);
+			name = "Pods-JCH5Bridge_Example";
+			productName = "Pods-JCH5Bridge_Example";
+			productReference = F642F670D10CB9700E3AFD896FC884E9 /* Pods_JCH5Bridge_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6D01B155EA01311397926BA2BD47BF68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8473A9C7451383221568867B94D06F69 /* JCH5Bridge */,
+				C5EDCFD8651CDE9CEE7C8519FBAC813E /* Pods-JCH5Bridge_Example */,
+				5EF7067C32DAF5D9333CD89B682845EE /* Pods-JCH5Bridge_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		772552D1E44D4D5BEFBCED06076D4715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C758F1C683B9C9A69AA38677F3CB6D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80C937487AEDD9E16CF4741F77870ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		135A4B2C813E972C1CB72EE8F74A3223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11FBB8DD43E4290BF0126109F98428F /* Pods-JCH5Bridge_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B4E2BECD578F0590B72A16E31CD821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E9B16BC863E41BDF7BF45AF315DBBB /* Pods-JCH5Bridge_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4EB4C04D96BEEE76B050EF3CDE917C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D682E827D91CF136BA970212EF5F946 /* JCH5Bridge-dummy.m in Sources */,
+				3BC3623698AF1B08E86297822018CC98 /* JCH5Bridge.m in Sources */,
+				0C529AA2A25E881B4B9E2CA7519C36BB /* JCH5BridgeHandler.m in Sources */,
+				17E18D7382A3A00F85E3914685007016 /* JCH5BridgeModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC1CEF922CF446A6ADC050AAA46B615C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JCH5Bridge;
+			target = 8473A9C7451383221568867B94D06F69 /* JCH5Bridge */;
+			targetProxy = D41B17FF5FEFA435F0F6F3E87252ED3C /* PBXContainerItemProxy */;
+		};
+		DF570E13B0FE89DE92C4A80625951E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JCH5Bridge_Example";
+			target = C5EDCFD8651CDE9CEE7C8519FBAC813E /* Pods-JCH5Bridge_Example */;
+			targetProxy = 619E2273E92D077AE3F1151DABA52CB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12B21A4977CE729B490326FA833AB3DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6560255ED436A286989B95A30FFD92 /* Pods-JCH5Bridge_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JCH5Bridge_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JCH5Bridge_Example/Pods-JCH5Bridge_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12EDCE174B41BDE8D57DF2BA058A7315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3660EBF9534EC6A85B39F9AB1741B38 /* Pods-JCH5Bridge_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JCH5Bridge_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JCH5Bridge_Example/Pods-JCH5Bridge_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5EA5006381E12BC9AA7DEEBC8BCE4905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7CF2A60AA35C4D272236348B816F642E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3A9A83E8366D58C2F62751EB5FCDBE /* Pods-JCH5Bridge_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JCH5Bridge_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JCH5Bridge_Tests/Pods-JCH5Bridge_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0D21261C01835133E343FC8043CC3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79FFBBBC0BF3E0475ADEA44C072C3FAD /* JCH5Bridge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JCH5Bridge/JCH5Bridge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JCH5Bridge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JCH5Bridge/JCH5Bridge.modulemap";
+				PRODUCT_MODULE_NAME = JCH5Bridge;
+				PRODUCT_NAME = JCH5Bridge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B64E2C722A3EAD054D380F489370F012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DD82C129972ED25541071C19E0625D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAFDE18D7880601992A3900A84C63601 /* Pods-JCH5Bridge_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JCH5Bridge_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JCH5Bridge_Tests/Pods-JCH5Bridge_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E35F214C744CF07DE6E1847D243F8233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79FFBBBC0BF3E0475ADEA44C072C3FAD /* JCH5Bridge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JCH5Bridge/JCH5Bridge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JCH5Bridge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JCH5Bridge/JCH5Bridge.modulemap";
+				PRODUCT_MODULE_NAME = JCH5Bridge;
+				PRODUCT_NAME = JCH5Bridge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64E2C722A3EAD054D380F489370F012 /* Debug */,
+				5EA5006381E12BC9AA7DEEBC8BCE4905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83905030278353B1834BC278E757C29A /* Build configuration list for PBXNativeTarget "JCH5Bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D21261C01835133E343FC8043CC3DF /* Debug */,
+				E35F214C744CF07DE6E1847D243F8233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C809ABBFD77E1BE44C6779237ADBF6ED /* Build configuration list for PBXNativeTarget "Pods-JCH5Bridge_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12B21A4977CE729B490326FA833AB3DE /* Debug */,
+				12EDCE174B41BDE8D57DF2BA058A7315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF77C236A3F69D98CCC8B9348537B35D /* Build configuration list for PBXNativeTarget "Pods-JCH5Bridge_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF2A60AA35C4D272236348B816F642E /* Debug */,
+				DD82C129972ED25541071C19E0625D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

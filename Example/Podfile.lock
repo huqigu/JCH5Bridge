@@ -1,0 +1,16 @@
+PODS:
+  - JCH5Bridge (0.1.0)
+
+DEPENDENCIES:
+  - JCH5Bridge (from `../`)
+
+EXTERNAL SOURCES:
+  JCH5Bridge:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JCH5Bridge: 361f9231fd8ed07d8f2c150b997d0fe44fb043e5
+
+PODFILE CHECKSUM: 7c42b124d18d851d47234cef56ceeed310827b14
+
+COCOAPODS: 1.5.3

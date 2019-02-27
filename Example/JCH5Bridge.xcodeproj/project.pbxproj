@@ -24,6 +24,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		98BDE9AA7995D543F3D79DAA /* Pods_JCH5Bridge_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E0C5BBBBE6A38CC15DDAB9 /* Pods_JCH5Bridge_Example.framework */; };
 		C30AECD4153E33F887E74102 /* Pods_JCH5Bridge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805B11AF1864195AB1FE2DA2 /* Pods_JCH5Bridge_Tests.framework */; };
+		FDD1E8E52226CDE3007E7084 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = FDD1E8E42226CDE2007E7084 /* test.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		061713A583840D565444D405 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		061713A583840D565444D405 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		13E0C5BBBBE6A38CC15DDAB9 /* Pods_JCH5Bridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCH5Bridge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D5586D84713D698892236A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3D5586D84713D698892236A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JCH5Bridge_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCH5Bridge_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,12 +62,13 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		60ED11E88915A7ADEE990D6D /* Pods-JCH5Bridge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCH5Bridge_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCH5Bridge_Tests/Pods-JCH5Bridge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		75D4AF81789C81B1BD8484B3 /* JCH5Bridge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JCH5Bridge.podspec; path = ../JCH5Bridge.podspec; sourceTree = "<group>"; };
+		75D4AF81789C81B1BD8484B3 /* JCH5Bridge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JCH5Bridge.podspec; path = ../JCH5Bridge.podspec; sourceTree = "<group>"; };
 		805B11AF1864195AB1FE2DA2 /* Pods_JCH5Bridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCH5Bridge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7E783CE35958711B1F76538 /* Pods-JCH5Bridge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCH5Bridge_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCH5Bridge_Example/Pods-JCH5Bridge_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C93CD8A22B2AB5B700019648 /* Pods-JCH5Bridge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCH5Bridge_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCH5Bridge_Example/Pods-JCH5Bridge_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CC52439B54027DB811E9F13A /* Pods-JCH5Bridge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCH5Bridge_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCH5Bridge_Tests/Pods-JCH5Bridge_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FDD1E8E42226CDE2007E7084 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* JCViewController.h */,
 				6003F5A6195388D20070C39A /* JCViewController.m */,
+				FDD1E8E42226CDE2007E7084 /* test.html */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -279,6 +282,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				FDD1E8E52226CDE3007E7084 /* test.html in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

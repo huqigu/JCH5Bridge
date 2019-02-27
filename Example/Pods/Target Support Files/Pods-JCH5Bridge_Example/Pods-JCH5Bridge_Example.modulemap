@@ -1,0 +1,6 @@
+framework module Pods_JCH5Bridge_Example {
+  umbrella header "Pods-JCH5Bridge_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
