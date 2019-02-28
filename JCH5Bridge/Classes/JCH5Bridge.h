@@ -15,19 +15,36 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,assign) BOOL logEnable;
 
-@property (nonatomic,strong) WKWebView *webView;
+@property (nonatomic,assign) BOOL progressEnable;
 
+@property (nonatomic,weak) UIViewController *webViewController;
 
 /**
  创建JCH5Bridge实例对象
 
  @param logEnable 是否打印log
+ @param progressEnable 是否显示progress
  @param bridgeModel 存储cookie、jscode、handle等需要注入到js的信息
  @return JCH5Bridge
  */
-- (instancetype)initWithLogEnable:(BOOL)logEnable bridgeModel:(JCH5BridgeModel *)bridgeModel;
+- (instancetype)initWithLogEnable:(BOOL)logEnable progressEnable:(BOOL)progressEnable bridgeModel:(JCH5BridgeModel *)bridgeModel;
 
 
+/**
+ webView 加载url
+
+ @param url url
+ */
+- (void)loadUrl:(NSURL *)url;
+
+
+
+/**
+ 调用Javascript
+
+ @param javascriptCommand Javascript语句
+ @param handler 处理完成的回调
+ */
 - (void)loadJavascriptCommand:(NSString *)javascriptCommand  completionHandler:(void (^ _Nullable)(_Nullable id, NSError * _Nullable error))handler;
 
 @end

@@ -13,6 +13,8 @@
 #import <WebKit/WebKit.h>
 @interface JCViewController ()<WKScriptMessageHandler>
 
+@property (nonatomic,strong) JCH5Bridge *bridge;
+
 @end
 
 @implementation JCViewController
@@ -33,30 +35,27 @@
     };";
     
     
-    JCH5BridgeHandler *handler1 = [[JCH5BridgeHandler alloc] initWithHandler:self handlerName:@"methodName1"];
-    
-    JCH5BridgeHandler *handler2 = [[JCH5BridgeHandler alloc] initWithHandler:self handlerName:@"methodName2"];
+    JCH5BridgeHandler *handler = [[JCH5BridgeHandler alloc] initWithHandler:self handlerNames:@[@"methodName1",@"methodName2"]];
     
     
-    JCH5BridgeModel *model = [[JCH5BridgeModel alloc] initWithJsCode:jsCode jsCookieDict:@{@"username":@"jc",@"password":@"123"} handlers:@[handler1,handler2]];
     
     
-    JCH5Bridge *bridge = [[JCH5Bridge alloc] initWithLogEnable:YES bridgeModel:model];
+    JCH5BridgeModel *model = [[JCH5BridgeModel alloc] initWithJsCode:jsCode jsCookieDict:@{@"username":@"jc",@"password":@"123"} handler:handler];
     
     
-    WKWebView *webView = [bridge webView];
-    webView.frame = self.view.bounds;
-    [self.view addSubview:webView];
+    self.bridge = [[JCH5Bridge alloc] initWithLogEnable:YES progressEnable:YES bridgeModel:model];
+    self.bridge.webViewController = self;
     
-    [webView loadRequest:[NSMutableURLRequest requestWithURL:[[NSBundle mainBundle] URLForResource:@"test" withExtension:@"html"]]];
-    
+   
+    [self.bridge loadUrl:[[NSBundle mainBundle] URLForResource:@"test" withExtension:@"html"]];
+//    [self.bridge loadUrl:[NSURL URLWithString:@"http://www.baidu.com"]];
     
     // 这是为了调用js的方法
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        [bridge loadJavascriptCommand:@"readCookie()" completionHandler:^(id  _Nullable result, NSError * _Nullable error) {
+        [self.bridge loadJavascriptCommand:@"readCookie()" completionHandler:^(id  _Nullable result, NSError * _Nullable error) {
             
-            [bridge loadJavascriptCommand:@"jsCallOc()" completionHandler:nil];
+            [self.bridge loadJavascriptCommand:@"jsCallOc()" completionHandler:nil];
             
         }];
         

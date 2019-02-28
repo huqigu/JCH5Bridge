@@ -9,9 +9,13 @@
 #import "JCH5Bridge.h"
 #import "JCH5BridgeModel.h"
 #import "JCH5BridgeHandler.h"
-@interface JCH5Bridge ()
+@interface JCH5Bridge ()<WKUIDelegate>
 
 @property (nonatomic,strong) JCH5BridgeModel *bridgeModel;
+
+@property (nonatomic,strong) WKWebView *webView;
+
+@property (nonatomic,strong) UIProgressView *progressView;
 
 @property (nonatomic,strong) WKWebViewConfiguration *configuration;
 
@@ -19,23 +23,19 @@
 
 @implementation JCH5Bridge
 
-- (WKWebView *)webView {
-    
-    if (_webView == nil) {
-        _webView = [[WKWebView alloc] initWithFrame:CGRectZero configuration:self.configuration];
-    }
-    
-    return _webView;
-}
-
 #pragma mark - Public Method
 
-- (instancetype)initWithLogEnable:(BOOL)logEnable bridgeModel:(JCH5BridgeModel *)bridgeModel {
+- (instancetype)initWithLogEnable:(BOOL)logEnable progressEnable:(BOOL)progressEnable bridgeModel:(nonnull JCH5BridgeModel *)bridgeModel {
     if (self = [super init]) {
         self.logEnable = logEnable;
+        self.progressEnable = progressEnable;
         self.bridgeModel = bridgeModel;
     }
     return self;
+}
+
+- (void)loadUrl:(NSURL *)url {
+    [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
 }
 
 
@@ -45,6 +45,56 @@
     
 }
 
+#pragma mark - Getter & Setter
+
+- (WKWebView *)webView {
+    
+    if (_webView == nil) {
+        _webView = [[WKWebView alloc] initWithFrame:CGRectZero configuration:self.configuration];
+        
+        _webView.UIDelegate = self;
+        // 加载进度条
+        [_webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:NULL];
+    }
+    
+    return _webView;
+}
+
+- (UIProgressView *)progressView {
+    
+    if (_progressView == nil) {
+        _progressView = [[UIProgressView alloc] initWithFrame:CGRectZero];
+        _progressView.backgroundColor  = [UIColor clearColor];
+        _progressView.trackTintColor   = [UIColor clearColor];
+        _progressView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    }
+    return _progressView;
+}
+
+- (void)setWebViewController:(UIViewController *)webViewController {
+    
+    _webViewController = webViewController;
+    
+    
+    self.webView.frame = webViewController.view.bounds;
+    [webViewController.view addSubview:self.webView];
+    
+    // 添加progressView
+    CGFloat progressY = [[UIApplication sharedApplication] statusBarFrame].size.height;
+    if (webViewController.navigationController) {
+        progressY += webViewController.navigationController.navigationBar.frame.size.height;
+    }
+    self.progressView.frame = CGRectMake(0, progressY, [UIScreen mainScreen].bounds.size.width, 2.0f);
+    [webViewController.view addSubview:self.progressView];
+    [webViewController.view bringSubviewToFront:self.progressView];
+}
+
+- (void)setProgressEnable:(BOOL)progressEnable {
+    
+    _progressEnable = progressEnable;
+    
+    self.progressView.hidden = !progressEnable;
+}
 
 #pragma mark - Private Method
 
@@ -71,7 +121,9 @@
         WKUserScript *script = [[WKUserScript alloc] initWithSource:bridgeModel.jsCode injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
         [self.configuration.userContentController addUserScript:script];
         
-        NSLog(@"✅ addJsCode successed \n jsCode == %@",bridgeModel.jsCode);
+        if (self.logEnable) {
+            NSLog(@"✅ addJsCode successed \n jsCode == %@",bridgeModel.jsCode);
+        }
     }
     
     
@@ -79,17 +131,90 @@
         WKUserScript * cookieScript = [[WKUserScript alloc]initWithSource:bridgeModel.jsCookie injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:NO];
         [self.configuration.userContentController addUserScript:cookieScript];
         
-        NSLog(@"✅ addJsCookie successed \n jsCode == %@",bridgeModel.jsCookie);
-    }
-    
-    
-    if (bridgeModel.handlers) {
-        for (JCH5BridgeHandler *handler in bridgeModel.handlers) {
-            [self.configuration.userContentController addScriptMessageHandler:handler.handler name:handler.handlerName];
-            
-            NSLog(@"✅ addJsHandle successed \n handle == %@ & handleName == %@",NSStringFromClass([handler.handler class]),handler.handlerName);
+        if (self.logEnable) {
+            NSLog(@"✅ addJsCookie successed \n jsCookie == %@",bridgeModel.jsCookie);
         }
     }
+    
+    
+    if (bridgeModel.handler) {
+        for (NSString *handlerName in bridgeModel.handler.handlerNames) {
+            [self.configuration.userContentController addScriptMessageHandler:bridgeModel.handler.handler name:handlerName];
+            
+            if (self.logEnable) {
+                NSLog(@"✅ addJsHandle successed \n handle == %@ & handleName == %@",NSStringFromClass([bridgeModel.handler.handler class]),handlerName);
+            }
+        }
+    }
+}
+
+#pragma mark - KVO
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    
+    if ([keyPath isEqualToString:@"estimatedProgress"]) {
+        self.progressView.alpha = 1.0;
+        
+        float progress = [[change objectForKey:@"new"] floatValue];
+        
+        [self.progressView setProgress:progress animated:YES];
+        if (progress >= 1.f) {
+            [UIView animateWithDuration:0.3f delay:0.3f options:UIViewAnimationOptionCurveEaseOut animations:^{
+                self.progressView.alpha = 0.f;
+            } completion:^(BOOL finished) {
+                self.progressView.progress = 0.f;
+            }];
+        }
+    }
+    
+}
+
+#pragma mark - WKUIDelegate
+
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler();
+    }];
+    [alertController addAction:alertAction];
+    [self.webViewController presentViewController:alertController animated:YES completion:NULL];
+}
+
+- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler(NO);
+    }];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler(YES);
+    }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    [self.webViewController presentViewController:alertController animated:YES completion:NULL];
+}
+
+- (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable))completionHandler {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:prompt preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler(@"");
+    }];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UITextField *textFiled = [alertController.textFields firstObject];
+        if (textFiled) {
+            completionHandler(textFiled.text);
+        } else {
+            completionHandler(@"");
+        }
+    }];
+    
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        completionHandler(textField.text);
+    }];
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    [self.webViewController presentViewController:alertController animated:YES completion:NULL];
 }
 
 @end

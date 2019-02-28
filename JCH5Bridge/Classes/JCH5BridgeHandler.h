@@ -14,9 +14,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,assign) id<WKScriptMessageHandler> handler;
 
-@property (nonatomic,copy) NSString *handlerName;
+@property (nonatomic,copy) NSArray<NSString *> *handlerNames;
 
-- (instancetype)initWithHandler:(id<WKScriptMessageHandler>)handler handlerName:(NSString *)handleName;
+
+/**
+ JCH5BridgeHandler
+
+ @param handler js调用oc方法的接收对象
+ @param handleNames js调用的所有oc方法
+ @return JCH5BridgeHandler
+ */
+- (instancetype)initWithHandler:(id<WKScriptMessageHandler>)handler handlerNames:(NSArray<NSString *> *)handleNames;
 
 @end
 

@@ -16,9 +16,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,copy) NSString *jsCookie;
 
-@property (nonatomic,strong) NSArray<JCH5BridgeHandler *>* handlers;
+@property (nonatomic,strong) JCH5BridgeHandler *handler;
 
-- (instancetype)initWithJsCode:(NSString *)jsCode jsCookieDict:(NSDictionary *)jsCookieDict handlers:(NSArray<JCH5BridgeHandler *> *)handlers;
+
+/**
+ JCH5BridgeModel
+
+ @param jsCode 注入的js代码
+ @param jsCookieDict 注入的cookie字典
+ @param handler js调用oc方法的接收对象model
+ @return JCH5BridgeModel
+ */
+- (instancetype)initWithJsCode:(NSString *)jsCode jsCookieDict:(NSDictionary *)jsCookieDict handler:(JCH5BridgeHandler *)handler;
 
 @end
 

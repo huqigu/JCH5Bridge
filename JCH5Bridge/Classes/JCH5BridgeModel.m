@@ -16,7 +16,7 @@
 @implementation JCH5BridgeModel
 
 
-- (instancetype)initWithJsCode:(NSString *)jsCode jsCookieDict:(NSDictionary *)jsCookieDict handlers:(NSArray<JCH5BridgeHandler *> *)handlers {
+- (instancetype)initWithJsCode:(NSString *)jsCode jsCookieDict:(NSDictionary *)jsCookieDict handler:(nonnull JCH5BridgeHandler *)handler {
     
     if (self = [super init]) {
         _jsCode = jsCode;
@@ -29,7 +29,7 @@
             
         }];
         
-        _handlers = handlers;
+        _handler = handler;
     }
     
     return self;

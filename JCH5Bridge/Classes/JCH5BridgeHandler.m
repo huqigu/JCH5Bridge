@@ -10,12 +10,12 @@
 
 @implementation JCH5BridgeHandler
 
-- (instancetype)initWithHandler:(id<WKScriptMessageHandler>)handler handlerName:(NSString *)handleName {
+- (instancetype)initWithHandler:(id<WKScriptMessageHandler>)handler handlerNames:(NSArray<NSString *> *)handleNames {
     
     if (self = [super init]) {
         
         _handler = handler;
-        _handlerName = handleName;
+        _handlerNames = handleNames;
     }
     
     return self;
