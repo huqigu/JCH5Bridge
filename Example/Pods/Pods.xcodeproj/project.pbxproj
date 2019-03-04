@@ -46,17 +46,17 @@
 		06E4FD53D162CDDFE9B9DF68F86E7098 /* Pods-JCH5Bridge_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCH5Bridge_Tests-umbrella.h"; sourceTree = "<group>"; };
 		09FDADC9B19A0335A34851CD0A34A2B9 /* JCH5Bridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JCH5Bridge.modulemap; sourceTree = "<group>"; };
 		0A20855BA6A188ECD76927743D5C2522 /* Pods-JCH5Bridge_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCH5Bridge_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0C78A73AA0206E88ABFA4243AC020F02 /* JCH5Bridge.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = JCH5Bridge.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0C78A73AA0206E88ABFA4243AC020F02 /* JCH5Bridge.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = JCH5Bridge.podspec; sourceTree = "<group>"; };
 		161C057A8E3F2190AC2ECD2DE7F2A155 /* Pods-JCH5Bridge_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCH5Bridge_Example-umbrella.h"; sourceTree = "<group>"; };
 		20D0C481F47A65E48E1C619AAC7E3579 /* JCH5BridgeModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JCH5BridgeModel.m; path = JCH5Bridge/Classes/JCH5BridgeModel.m; sourceTree = "<group>"; };
-		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		24B18AEC817351730F69184987B013B0 /* Pods-JCH5Bridge_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCH5Bridge_Example-resources.sh"; sourceTree = "<group>"; };
-		25E88C63E9E75D0C507529BB9D95026A /* Pods_JCH5Bridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JCH5Bridge_Tests.framework; path = "Pods-JCH5Bridge_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25E88C63E9E75D0C507529BB9D95026A /* Pods_JCH5Bridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCH5Bridge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E77CBF6A2EF4CD1977BED512FA00DA /* Pods-JCH5Bridge_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCH5Bridge_Example-dummy.m"; sourceTree = "<group>"; };
 		2AA439C32D7DE59E28574F999128291C /* JCH5Bridge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCH5Bridge-umbrella.h"; sourceTree = "<group>"; };
 		372E66385549B07B9382E13E9DC5F8AD /* Pods-JCH5Bridge_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCH5Bridge_Example-frameworks.sh"; sourceTree = "<group>"; };
 		481E7414B8DADA009318B6F8874DBBD7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49B756EC65EB4EAD2BF9B0EFFD7CD7E6 /* JCH5Bridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JCH5Bridge.framework; path = JCH5Bridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B756EC65EB4EAD2BF9B0EFFD7CD7E6 /* JCH5Bridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCH5Bridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A4DFF948C19E3E65588D5044B7867ED /* JCH5BridgeHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JCH5BridgeHandler.h; path = JCH5Bridge/Classes/JCH5BridgeHandler.h; sourceTree = "<group>"; };
 		5CDCEE432480A5C2AB4D128D25971851 /* Pods-JCH5Bridge_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCH5Bridge_Tests-dummy.m"; sourceTree = "<group>"; };
 		66E369E92A1456914B99209774748C19 /* Pods-JCH5Bridge_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCH5Bridge_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		79FFBBBC0BF3E0475ADEA44C072C3FAD /* JCH5Bridge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCH5Bridge.xcconfig; sourceTree = "<group>"; };
 		819E99E1D8C7AFB55C68141DEFDD4A5C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A6560255ED436A286989B95A30FFD92 /* Pods-JCH5Bridge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCH5Bridge_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A1BAA53A608663B1F7279C8803F3CEC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A1BAA53A608663B1F7279C8803F3CEC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AAFDE18D7880601992A3900A84C63601 /* Pods-JCH5Bridge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCH5Bridge_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AB3A9A83E8366D58C2F62751EB5FCDBE /* Pods-JCH5Bridge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCH5Bridge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B322DE95EEFF9D8A8B4086A33B303E41 /* JCH5Bridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JCH5Bridge.m; path = JCH5Bridge/Classes/JCH5Bridge.m; sourceTree = "<group>"; };
@@ -74,14 +74,14 @@
 		C2AEF05A834352DB5857DABAC3741747 /* Pods-JCH5Bridge_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JCH5Bridge_Example.modulemap"; sourceTree = "<group>"; };
 		C72E1B8D55EB75BF128BEF717359C629 /* Pods-JCH5Bridge_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCH5Bridge_Tests-resources.sh"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CD7D5A3ACB2DEE53C13B972B75767825 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CD7D5A3ACB2DEE53C13B972B75767825 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D7C80AFA8606F8D231C2A0B9D7E9A965 /* Pods-JCH5Bridge_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCH5Bridge_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E206ACD5E0EBBAABFA4661EADE975EC8 /* Pods-JCH5Bridge_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCH5Bridge_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EBE068AB647AC9BFD0088E3292F42F00 /* Pods-JCH5Bridge_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCH5Bridge_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		EC20E2FCA78B28B8427A3303857FB2C7 /* Pods-JCH5Bridge_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JCH5Bridge_Tests.modulemap"; sourceTree = "<group>"; };
 		F0FB507EBCCC6E3EAA90B851596FF5B2 /* JCH5Bridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JCH5Bridge-dummy.m"; sourceTree = "<group>"; };
 		F3660EBF9534EC6A85B39F9AB1741B38 /* Pods-JCH5Bridge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCH5Bridge_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F642F670D10CB9700E3AFD896FC884E9 /* Pods_JCH5Bridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JCH5Bridge_Example.framework; path = "Pods-JCH5Bridge_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F642F670D10CB9700E3AFD896FC884E9 /* Pods_JCH5Bridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCH5Bridge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -551,8 +551,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
