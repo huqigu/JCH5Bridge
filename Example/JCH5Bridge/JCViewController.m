@@ -11,7 +11,7 @@
 #import "JCH5BridgeHandler.h"
 #import "JCH5BridgeModel.h"
 #import <WebKit/WebKit.h>
-@interface JCViewController ()<WKScriptMessageHandler>
+@interface JCViewController ()
 
 @property (nonatomic,strong) JCH5Bridge *bridge;
 
@@ -30,14 +30,12 @@
     alert(x);\
     return x;\
     };function jsCallOc(){\
-    window.webkit.messageHandlers.methodName1.postMessage(\"this is message1\");\
+    window.webkit.messageHandlers.methodName1.postMessage({methodName:\"sayHelloWithName:message:\", args:[\"Tom\",\"hello world\"],callback:\"readCookie()\"});\
     window.webkit.messageHandlers.methodName2.postMessage(\"this is message2\");\
     };";
     
     
     JCH5BridgeHandler *handler = [[JCH5BridgeHandler alloc] initWithHandler:self handlerNames:@[@"methodName1",@"methodName2"]];
-    
-    
     
     
     JCH5BridgeModel *model = [[JCH5BridgeModel alloc] initWithJsCode:jsCode jsCookieDict:@{@"username":@"jc",@"password":@"123"} handler:handler];
@@ -64,16 +62,12 @@
 }
 
 
-#pragma mark - WKScriptMessageHandler
 
-- (void)userContentController:(WKUserContentController *)userContentController
-      didReceiveScriptMessage:(WKScriptMessage *)message {
-    if ([message.name isEqualToString:@"methodName1"]) {
-        NSLog(@"%@", message.body);
-    }
+// JS最终调用的OC方法
+- (void)sayHelloWithName:(NSString *)name message:(NSString *)message {
     
-    if ([message.name isEqualToString:@"methodName2"]) {
-        NSLog(@"%@", message.body);
-    }
+    NSLog(@"name == %@ && message == %@",name,message);
+    
 }
+
 @end
