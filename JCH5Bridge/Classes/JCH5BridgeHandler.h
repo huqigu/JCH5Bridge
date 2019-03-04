@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JCH5BridgeHandler : NSObject
 
-@property (nonatomic,assign) id<WKScriptMessageHandler> handler;
+@property (nonatomic,assign) id handler;
 
 @property (nonatomic,copy) NSArray<NSString *> *handlerNames;
 
@@ -24,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param handleNames js调用的所有oc方法
  @return JCH5BridgeHandler
  */
-- (instancetype)initWithHandler:(id<WKScriptMessageHandler>)handler handlerNames:(NSArray<NSString *> *)handleNames;
+- (instancetype)initWithHandler:(id)handler handlerNames:(NSArray<NSString *> *)handleNames;
 
 @end
 

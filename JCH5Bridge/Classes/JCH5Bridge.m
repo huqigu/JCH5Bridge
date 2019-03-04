@@ -9,7 +9,7 @@
 #import "JCH5Bridge.h"
 #import "JCH5BridgeModel.h"
 #import "JCH5BridgeHandler.h"
-@interface JCH5Bridge ()<WKUIDelegate>
+@interface JCH5Bridge ()<WKUIDelegate,WKScriptMessageHandler>
 
 @property (nonatomic,strong) JCH5BridgeModel *bridgeModel;
 
@@ -139,7 +139,9 @@
     
     if (bridgeModel.handler) {
         for (NSString *handlerName in bridgeModel.handler.handlerNames) {
-            [self.configuration.userContentController addScriptMessageHandler:bridgeModel.handler.handler name:handlerName];
+//            [self.configuration.userContentController addScriptMessageHandler:bridgeModel.handler.handler name:handlerName];
+            
+            [self.configuration.userContentController addScriptMessageHandler:self name:handlerName];
             
             if (self.logEnable) {
                 NSLog(@"✅ addJsHandle successed \n handle == %@ & handleName == %@",NSStringFromClass([bridgeModel.handler.handler class]),handlerName);
@@ -216,5 +218,54 @@
     [alertController addAction:okAction];
     [self.webViewController presentViewController:alertController animated:YES completion:NULL];
 }
+
+
+#pragma mark - WKScriptMessageHandler
+
+- (void)userContentController:(WKUserContentController *)userContentController
+      didReceiveScriptMessage:(WKScriptMessage *)message {
+
+    
+    if ([self.bridgeModel.handler.handlerNames containsObject:message.name]) {
+        
+        if ([message.body isKindOfClass:[NSDictionary class]]) {
+            
+            if (self.logEnable) {
+                NSLog(@"✅ js call oc method : %@ \n args : %@ \n callback : %@",[message.body objectForKey:@"methodName"],[message.body objectForKey:@"args"],[message.body objectForKey:@"callback"]);
+            }
+            NSArray *args = [message.body objectForKey:@"args"];
+            Class targetClass = [self.bridgeModel.handler.handler class];
+            SEL targetSelector = NSSelectorFromString([message.body objectForKey:@"methodName"]);
+            NSMethodSignature *methodSignature = [targetClass instanceMethodSignatureForSelector:targetSelector];
+            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:methodSignature];
+            [invocation setSelector:targetSelector];
+            [invocation setTarget:self.bridgeModel.handler.handler];
+//            [invocation setArgument:&urlInfo atIndex:2];
+//            [invocation setArgument:&completion atIndex:3];
+            for (int i = 0; i < args.count; i ++) {
+                id arg = args[i];
+                [invocation setArgument:&arg atIndex:i + 2];
+            }
+            [invocation retainArguments];
+            [invocation invoke];
+            
+            if ([message.body objectForKey:@"callback"]) {
+                [self loadJavascriptCommand:[message.body objectForKey:@"callback"] completionHandler:nil];
+            }
+            
+        }else {
+            
+            if (self.logEnable) {
+                NSLog(@"❌ paramas is wrong, js call oc method : %@ ",message.name);
+            }
+            
+        }
+
+    }
+    
+    
+    
+}
+
 
 @end
