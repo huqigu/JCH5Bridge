@@ -7,8 +7,6 @@
 //
 
 #import "JCH5Bridge.h"
-#import "JCH5BridgeModel.h"
-#import "JCH5BridgeHandler.h"
 @interface JCH5Bridge ()<WKUIDelegate,WKScriptMessageHandler>
 
 @property (nonatomic,strong) JCH5BridgeModel *bridgeModel;

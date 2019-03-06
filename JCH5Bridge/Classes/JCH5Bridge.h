@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
-
-
-@class JCH5BridgeModel;
+#import "JCH5BridgeModel.h"
+#import "JCH5BridgeHandler.h"
 
 typedef void (^Completion)(void);
 

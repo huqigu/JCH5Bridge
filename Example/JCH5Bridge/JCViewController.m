@@ -8,8 +8,6 @@
 
 #import "JCViewController.h"
 #import "JCH5Bridge.h"
-#import "JCH5BridgeHandler.h"
-#import "JCH5BridgeModel.h"
 #import <WebKit/WebKit.h>
 @interface JCViewController ()
 

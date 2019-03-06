@@ -1,5 +1,5 @@
 PODS:
-  - JCH5Bridge (0.2.0)
+  - JCH5Bridge (0.3.0)
 
 DEPENDENCIES:
   - JCH5Bridge (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JCH5Bridge: 37e91a24db93793d181ab000cdf299f38643654c
+  JCH5Bridge: 75b961af3e37a8db1c534796402380fbdcf78ce8
 
 PODFILE CHECKSUM: 7c42b124d18d851d47234cef56ceeed310827b14
 
