@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+
 @class JCH5BridgeModel;
+
+typedef void (^Completion)(void);
+
 @interface JCH5Bridge : NSObject
 
 @property (nonatomic,assign) BOOL logEnable;
@@ -35,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param url url
  */
-- (void)loadUrl:(NSURL *)url;
+- (void)loadUrl:(NSURL *)url completionHandler:(Completion)completion;
 
 
 
@@ -45,8 +48,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param javascriptCommand Javascript语句
  @param handler 处理完成的回调
  */
-- (void)loadJavascriptCommand:(NSString *)javascriptCommand  completionHandler:(void (^ _Nullable)(_Nullable id, NSError * _Nullable error))handler;
+- (void)loadJavascriptCommand:(NSString *)javascriptCommand  completionHandler:(void (^)(id, NSError *error))handler;
 
 @end
 
-NS_ASSUME_NONNULL_END
+

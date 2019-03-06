@@ -19,6 +19,8 @@
 
 @property (nonatomic,strong) WKWebViewConfiguration *configuration;
 
+@property (nonatomic,strong) Completion completion;
+
 @end
 
 @implementation JCH5Bridge
@@ -34,12 +36,14 @@
     return self;
 }
 
-- (void)loadUrl:(NSURL *)url {
+- (void)loadUrl:(NSURL *)url completionHandler:(Completion)completion {
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
+    
+    self.completion = completion;
 }
 
 
-- (void)loadJavascriptCommand:(NSString *)javascriptCommand completionHandler:(void (^ _Nullable)(_Nullable id, NSError * _Nullable error))handler {
+- (void)loadJavascriptCommand:(NSString *)javascriptCommand completionHandler:(void (^)(id, NSError * error))handler {
     
     [self.webView evaluateJavaScript:javascriptCommand completionHandler:handler];
     
@@ -161,6 +165,11 @@
         
         [self.progressView setProgress:progress animated:YES];
         if (progress >= 1.f) {
+            
+            if (self.completion) {
+                self.completion();
+            }
+            
             [UIView animateWithDuration:0.3f delay:0.3f options:UIViewAnimationOptionCurveEaseOut animations:^{
                 self.progressView.alpha = 0.f;
             } completion:^(BOOL finished) {
@@ -240,8 +249,6 @@
             NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:methodSignature];
             [invocation setSelector:targetSelector];
             [invocation setTarget:self.bridgeModel.handler.handler];
-//            [invocation setArgument:&urlInfo atIndex:2];
-//            [invocation setArgument:&completion atIndex:3];
             for (int i = 0; i < args.count; i ++) {
                 id arg = args[i];
                 [invocation setArgument:&arg atIndex:i + 2];

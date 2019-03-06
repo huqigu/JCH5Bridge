@@ -45,19 +45,14 @@
     self.bridge.webViewController = self;
     
    
-    [self.bridge loadUrl:[[NSBundle mainBundle] URLForResource:@"test" withExtension:@"html"]];
-//    [self.bridge loadUrl:[NSURL URLWithString:@"http://www.baidu.com"]];
-    
-    // 这是为了调用js的方法
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
+    [self.bridge loadUrl:[[NSBundle mainBundle] URLForResource:@"test" withExtension:@"html"] completionHandler:^{
         [self.bridge loadJavascriptCommand:@"readCookie()" completionHandler:^(id  _Nullable result, NSError * _Nullable error) {
             
             [self.bridge loadJavascriptCommand:@"jsCallOc()" completionHandler:nil];
             
         }];
-        
-    });
+    }];
+//    [self.bridge loadUrl:[NSURL URLWithString:@"http://www.baidu.com"]];
     
 }
 
