@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 #import <JCH5Bridge.h>
-#import <JCH5BridgeModel.h>
-#import <JCH5BridgeHandler.h>
 #import "YBImageBrowser.h"
 
 @interface ViewController ()<YBImageBrowserDataSource>
@@ -24,6 +22,8 @@
 
 @implementation ViewController
 
+#pragma mark - Setter & Getter
+
 - (NSMutableArray *)images {
     
     if (_images == nil) {
@@ -31,6 +31,8 @@
     }
     return _images;
 }
+
+#pragma mark - Life Cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -70,9 +72,11 @@
     
 }
 
+#pragma mark - JS Call OC
+
 - (void)receiveImages:(NSString *)images {
     
-    NSLog(@"images == %@",images);
+//    NSLog(@"images == %@",images);
     
     [self.images removeAllObjects];
     
@@ -83,7 +87,7 @@
 
 - (void)clickImage:(NSString *)imageSrc {
     
-    NSLog(@"imageSrc == %@",imageSrc);
+//    NSLog(@"imageSrc == %@",imageSrc);
     
     self.browser = [YBImageBrowser new];
     self.browser.dataSource = self;
@@ -98,6 +102,7 @@
     [self.browser show];
 }
 
+#pragma mark - YBImageBrowserDataSource
 // 实现 <YBImageBrowserDataSource> 协议方法配置数据源
 - (NSUInteger)yb_numberOfCellForImageBrowserView:(YBImageBrowserView *)imageBrowserView {
     return self.images.count;

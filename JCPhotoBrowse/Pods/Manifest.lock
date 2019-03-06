@@ -1,5 +1,5 @@
 PODS:
-  - JCH5Bridge (0.2.0)
+  - JCH5Bridge (0.3.0)
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
@@ -22,7 +22,7 @@ SPEC REPOS:
     - YYImage
 
 SPEC CHECKSUMS:
-  JCH5Bridge: 0d8b1f537020e343fcc4df6b890b701530f57071
+  JCH5Bridge: 0b293578f1703d30b313588e4e96d18064bc8050
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   YBImageBrowser: e3c514dd3bdc6efef379eabd57988eae3c109e38
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54

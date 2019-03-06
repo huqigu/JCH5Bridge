@@ -7,8 +7,6 @@
 //
 
 #import "JCH5Bridge.h"
-#import "JCH5BridgeModel.h"
-#import "JCH5BridgeHandler.h"
 @interface JCH5Bridge ()<WKUIDelegate,WKScriptMessageHandler>
 
 @property (nonatomic,strong) JCH5BridgeModel *bridgeModel;
@@ -36,14 +34,14 @@
     return self;
 }
 
-- (void)loadUrl:(NSURL *)url completionHandler:(nonnull Completion)completion {
+- (void)loadUrl:(NSURL *)url completionHandler:(Completion)completion {
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
     
     self.completion = completion;
 }
 
 
-- (void)loadJavascriptCommand:(NSString *)javascriptCommand completionHandler:(void (^ _Nullable)(_Nullable id, NSError * _Nullable error))handler {
+- (void)loadJavascriptCommand:(NSString *)javascriptCommand completionHandler:(void (^)(id, NSError * error))handler {
     
     [self.webView evaluateJavaScript:javascriptCommand completionHandler:handler];
     
@@ -166,7 +164,9 @@
         [self.progressView setProgress:progress animated:YES];
         if (progress >= 1.f) {
             
-            self.completion();
+            if (self.completion) {
+                self.completion();
+            }
             
             [UIView animateWithDuration:0.3f delay:0.3f options:UIViewAnimationOptionCurveEaseOut animations:^{
                 self.progressView.alpha = 0.f;

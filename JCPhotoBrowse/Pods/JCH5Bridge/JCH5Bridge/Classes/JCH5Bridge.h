@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
-
-NS_ASSUME_NONNULL_BEGIN
-@class JCH5BridgeModel;
+#import "JCH5BridgeModel.h"
+#import "JCH5BridgeHandler.h"
 
 typedef void (^Completion)(void);
 
@@ -48,8 +47,8 @@ typedef void (^Completion)(void);
  @param javascriptCommand Javascript语句
  @param handler 处理完成的回调
  */
-- (void)loadJavascriptCommand:(NSString *)javascriptCommand  completionHandler:(void (^ _Nullable)(_Nullable id, NSError * _Nullable error))handler;
+- (void)loadJavascriptCommand:(NSString *)javascriptCommand  completionHandler:(void (^)(id, NSError *error))handler;
 
 @end
 
-NS_ASSUME_NONNULL_END
+
